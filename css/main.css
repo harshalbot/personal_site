@@ -1,0 +1,734 @@
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.logo {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+hr {
+    color: #fff;
+    /* old IE */
+    background-color: #fff;
+    /* Modern Browsers */
+}
+
+.secondary_hr {
+    color: #fff;
+    /* old IE */
+    background-color: #fff;
+    /* Modern Browsers */
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 400%;
+    color: white;
+    letter-spacing: 10px;
+}
+
+h1:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+h1:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.about_me_text {
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 150%;
+}
+
+.intro_text {
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 150%;
+}
+
+.mail {
+    color: #1FC4B6;
+    font-family: 'Source Sans Pro';
+    font-size: 120%;
+}
+
+.social_icons {
+    color: #5E6A71;
+}
+
+li {
+    display: inline;
+}
+
+.fa {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    padding: 10px;
+}
+
+a:link {
+    color: #717D84;
+}
+
+a:hover {
+    color: #717D84;
+}
+
+a:visited {
+    color: #717D84;
+}
+
+.fa:hover {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#about_me:hover {
+    -webkit-transition: all ease-in-out;
+    -moz-transition: all ease-in-out;
+    -ms-transition: all ease-in-out;
+    -o-transition: all ease-in-out;
+    transition: all ease-in-out;
+    color: transparent;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.9), 2px 0px 0px #00FFD7, -1px 0px 0px #FF0000;
+    padding: 0 0 0 -1px;
+}
+
+
+/* ---- about_me.html ---- */
+
+.button {
+    color: #00c7ec;
+}
+.button:hover {
+  color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  background-color: #00c7ec;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.button:hover:before {
+  -webkit-animation: shine 0.5s 0s linear;
+  -moz-animation: shine 0.5s 0s linear;
+  animation: shine 0.5s 0s linear;
+}
+.button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.button:before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@-webkit-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@-moz-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.social_icons_about_me {
+    margin-left: 35%;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2f363c;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .logo {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 53%;
+        width: 50%;
+        border: none;
+        height: 3px;
+    }
+    .secondary_hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 125%;
+        width: 50%;
+        border: none;
+        height: 3px;
+    }
+    #heading1 {
+        margin-top: 58%;
+        margin-left: 5%;
+    }
+    #heading2 {
+        margin-top: 79%;
+        margin-left: 5%;
+    }
+    #heading3 {
+        margin-top: 100%;
+        margin-left: 5%;
+    }
+    #about_me {
+        margin-top: 20%;
+        margin-left: 80%;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+    .intro_text {
+        position: absolute;
+        margin-top: 140%;
+        margin-left: 5%;
+        font-size: 140%;
+    }
+    .mail {
+        position: absolute;
+        margin-top: 150%;
+        margin-left: 5%;
+        font-size: 110%;
+    }
+    .social_icons {
+        position: absolute;
+        margin-top: 165%;
+        margin-left: 7%;
+    }
+    /* ---- About-Me page stylesheet ---- */
+
+    .about_me_logo {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 4%;
+        width: 6%;
+        height: 4%;
+    }
+
+    .about_me_heading {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 33%;
+        font-family: 'Source Code Pro', ;
+        font-size: 2em;
+    }
+
+    .about_me_text {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1em;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+    .social_icons_about_me {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+    .logo {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 46%;
+        width: 15%;
+        border: none;
+        height: 3px;
+    }
+    .secondary_hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 110%;
+        width: 15%;
+        border: none;
+        height: 3px;
+    }
+    #heading1 {
+        margin-top: 51%;
+        margin-left: 5%;
+    }
+    #heading2 {
+        margin-top: 69%;
+        margin-left: 5%;
+    }
+    #heading3 {
+        margin-top: 87%;
+        margin-left: 5%;
+    }
+    #about_me {
+        margin-top: 75%;
+        margin-left: 80%;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    .intro_text {
+        position: absolute;
+        margin-top: 120%;
+        margin-left: 5%;
+        font-size: 140%;
+    }
+    .mail {
+        position: absolute;
+        margin-top: 130%;
+        margin-left: 5%;
+        font-size: 110%;
+    }
+    .social_icons {
+        position: absolute;
+        margin-top: 116%;
+        margin-left: 65%;
+    }
+
+    /* ---- About-Me page stylesheet ---- */
+
+    .about_me_logo {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 6%;
+        height: 6%;
+    }
+
+    .about_me_heading {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 33%;
+        font-family: 'Source Code Pro', ;
+        font-size: 2em;
+    }
+
+    .about_me_text {
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.2em;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+    .social_icons_about_me {
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 36%;
+        width: 15%;
+        border: none;
+        height: 3px;
+    }
+    .secondary_hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 70%;
+        width: 15%;
+        border: none;
+        height: 3px;
+    }
+    #heading1 {
+        margin-top: 39%;
+        margin-left: 5%;
+    }
+    #heading2 {
+        margin-top: 49%;
+        margin-left: 5%;
+    }
+    #heading3 {
+        margin-top: 59%;
+        margin-left: 5%;
+    }
+    #about_me {
+        margin-top: 51%;
+        margin-left: 87%;
+        font-size: 1.7em;
+        letter-spacing: 3px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    .intro_text {
+        position: absolute;
+        margin-top: 74%;
+        margin-left: 5%;
+        font-size: 180%;
+    }
+    .mail {
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 5%;
+        font-size: 150%;
+    }
+    .social_icons {
+        position: absolute;
+        margin-top: 76%;
+        margin-left: 65%;
+    }
+
+    /* ---- About-Me page stylesheet ---- */
+    .about_me_logo {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 6%;
+        height: 6%;
+    }
+
+    .about_me_heading {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 33%;
+        font-family: 'Source Code Pro', ;
+    }
+
+    .about_me_text {
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.7em;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+    .social_icons_about_me {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 27%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 40%;
+        width: 15%;
+        border: none;
+        height: 3px;
+    }
+    .secondary_hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 65%;
+        width: 15%;
+        border: none;
+        height: 3px;
+    }
+    #heading1 {
+        margin-top: 42%;
+        margin-left: 5%;
+    }
+    #heading2 {
+        margin-top: 49%;
+        margin-left: 5%;
+    }
+    #heading3 {
+        margin-top: 56%;
+        margin-left: 5%;
+    }
+    #about_me {
+        margin-top: 52%;
+        margin-left: 90%;
+        font-size: 1.7em;
+        letter-spacing: 3px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    .intro_text {
+        position: absolute;
+        margin-top: 74%;
+        margin-left: 5%;
+        font-size: 250%;
+    }
+    .mail {
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 5%;
+        font-size: 220%;
+    }
+    .social_icons {
+        position: absolute;
+        margin-top: 76%;
+        margin-left: 65%;
+    }
+    .fa {
+        padding: 20px;
+    }
+
+    /* ---- About-Me page stylesheet ---- */
+    .about_me_logo {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 6%;
+        height: 6%;
+    }
+
+    .about_me_heading {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 40%;
+        font-family: 'Source Code Pro', ;
+    }
+
+    .about_me_text {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 2em;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+    .social_icons_about_me {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 27%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .logo {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 18%;
+        width: 7%;
+        border: none;
+        height: 3px;
+    }
+    .secondary_hr {
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 43%;
+        width: 7%;
+        border: none;
+        height: 3px;
+    }
+    #heading1 {
+        margin-top: 21%;
+        margin-left: 5%;
+    }
+    #heading2 {
+        margin-top: 28%;
+        margin-left: 5%;
+    }
+    #heading3 {
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    #about_me {
+        margin-top: 30%;
+        margin-left: 93%;
+        font-size: 1.5em;
+        letter-spacing: 3px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    .intro_text {
+        position: absolute;
+        margin-top: 47%;
+        margin-left: 5%;
+        font-size: 150%;
+    }
+    .mail {
+        position: absolute;
+        margin-top: 49%;
+        margin-left: 5%;
+        font-size: 120%;
+    }
+    .social_icons {
+        position: absolute;
+        margin-top: 47%;
+        margin-left: 75%;
+    }
+    .fa {
+        size: 40px;
+    }
+
+    /* ---- About-Me page stylesheet ---- */
+    .about_me_heading {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 40%;
+        font-family: 'Source Code Pro', ;
+    }
+    .about_me_text {
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 2em;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+}
