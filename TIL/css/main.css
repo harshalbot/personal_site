@@ -1,0 +1,103 @@
+    body {
+        background: url("../assets/images/linedpaper.png") repeat;
+        width: 100%;
+    }
+    
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #88888B;
+    }
+    
+    button {
+        background-color: #0C67E0;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    hr {
+        border-color: #A7A7A9;
+    }
+    
+    .til_div {
+        font-family: 'Open-Sans', sans-serif;
+    }
+    
+    .til_title {
+        color: #4f4f51;
+    }
+    
+    .til_text {
+        color: #767678;
+    }
+    
+    @media (min-width: 0px) and (max-width: 320px) {
+        h1 {
+            /*position: absolute; */
+            margin-left: 10%;
+            margin-top: 5%;
+            font-size: 1.5em;
+            padding-bottom: 0;
+            margin-bottom: -7%;
+            margin-right: 0;
+            width: 70%;
+            float: left;
+        }
+        .hr_1 {
+            width: 85%;
+            /*position: absolute; */
+            margin-left: 10%;
+            margin-top: 0%;
+            margin-bottom: 10%;
+        }
+        button {
+            /*position: absolute; */
+            margin-left: 73%;
+            margin-top: -20%;
+            margin-bottom: 5%;
+            padding-right: 0;
+            padding-left: 0;
+            width: 20%;
+            height: 20%;
+        }
+        .til_div {
+            position: relative;
+            margin-top: 5%;
+            margin-left: 10%;
+            width: 90%;
+        }
+        .til_title {
+            margin-bottom: 10%;
+        }
+        .til-date {
+            position: relative;
+            font-size: .6em;
+            margin-left: 75%;
+            margin-top: -13%;
+        }
+        .til_text {
+            position: relative;
+            margin-bottom: 10%;
+
+        }
+        .link_to_til {
+        	position: relative;
+
+        	margin-top: 10px;
+        }
+        .til_hr {
+            width: 89%;
+            /*position: absolute; */
+            margin-left: 0%;
+
+            margin-top: 5%;
+        }
+    }
+    
+    @media (min-width: 321px) and (max-width: 425px) {}
+    
+    @media (min-width: 426px) and (max-width: 768px) {}
+    
+    @media (min-width: 769px) and (max-width: 1024px) {}
+    
+    @media (min-width: 1025px) {}
