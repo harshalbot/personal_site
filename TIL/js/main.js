@@ -2,6 +2,10 @@ function showDiv() {
     document.getElementById('link_to_til').style.display = "block";
 }
 
-var el = document.getElementById("til_text");
+var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
 
-el.addEventListener("click", showDiv());
+$("til_text").bind(clickHandler, function(e) {
+    document.getElementById('link_to_til').style.display="block";
+});
+
+
