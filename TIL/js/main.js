@@ -9,3 +9,8 @@ $("til_text").bind(clickHandler, function(e) {
 });
 
 
+function addForm() {
+	document.getElementById('add_button')
+}
+
+
