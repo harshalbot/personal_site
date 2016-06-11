@@ -1,19 +1,11 @@
     body {
-        background: url("../assets/images/linedpaper.png") repeat;
+        background-color: #f7f7f7;
         width: 100%;
         overflow-x: hidden;
     }
     
     h1 {
         font-family: 'Raleway', sans-serif;
-        color: #88888B;
-    }
-    
-    button {
-        background-color: #0C67E0;
-        color: #ffffff;
-        border-radius: 5px;
-        border: none;
     }
     
     hr {
@@ -24,231 +16,231 @@
         font-family: 'Open-Sans', sans-serif;
     }
     
+    .til_body {
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+    
+    .til_date {
+        color: #858585;
+    }
+    
     .til_title {
-        color: #4f4f51;
+        color: #008fb3;
     }
     
     .til_text {
-        color: #767678;
+        color: #858585;
+    }
+    
+    .footer {
+        color: #858585;
+        font-family: 'Tangerine', cursive;
     }
     
     @media (min-width: 0px) and (max-width: 320px) {
         h1 {
             /*position: absolute; */
-            margin-left: 10%;
-            margin-top: 5%;
+            margin-left: 20%;
+            margin-top: 15%;
             font-size: 1.5em;
-            padding-bottom: 0;
-            
-            margin-right: 0;
-            width: 70%;
-            float: left;
+            padding-bottom: 10%;
         }
-        .hr_1 {
+        .til_body {
+            margin-top: 5%;
+            margin-left: 5%;
             width: 85%;
-            /*position: absolute; */
-            margin-left: 10%;
-            margin-top: 0%;
-            margin-bottom: 10%;
-        }
-        button {
-            /*position: absolute; */
-            margin-left: 73%;
-            margin-top: -20%;
-            margin-bottom: 5%;
-            padding-right: 0;
-            padding-left: 0;
-            width: 20%;
-            height: 20%;
+            padding-top: 10%;
+            padding-bottom: 5%;
         }
         .til_div {
-            position: relative;
             margin-top: 5%;
             margin-left: 10%;
             width: 90%;
         }
         .til_title {
-            margin-bottom: 10%;
+            margin-top: 1%;
+            margin-bottom: 5%;
+            margin-top: 1%;
+            font-size: 1em;
         }
-        .til-date {
-            position: relative;
-            font-size: .6em;
-            margin-left: 75%;
-            margin-top: -13%;
+        .til_date {
+            margin-top: 5%;
+            margin-bottom: 4%;
+            font-size: .8em;
         }
         .til_text {
-            position: relative;
-            margin-bottom: 10%;
-
-        }
-        .link_to_til {
-        	position: relative;
-
-        	margin-top: 10px;
-        }
-        .til_hr {
-            width: 89%;
-            /*position: absolute; */
-            margin-left: 0%;
-
             margin-top: 5%;
+            margin-bottom: 10%;
+            font-size: .8em;
+        }
+        .footer {
+            margin-left: 30%;
         }
     }
     
     @media (min-width: 321px) and (max-width: 425px) {
-    	body {
-    		margin-left: 10%;
-            overflow-x: hidden;
-    	}
-    	h1 {
-    		
-    		width: 60%;
-    		font-size: 1.7em;
-    		margin-right: 0;
-    		float: left;
-    	}
-    	button {            
-            margin-left: 65%;
-            margin-top: -10% !important;
-            margin-bottom: 5%;
-            padding-right: 0;
-            padding-left: 0;
-            width: 15%;
-            height: 30%;
-        }
-        .hr_1 {
-            width: 85%;
+        h1 {
             /*position: absolute; */
-            margin-left: 0%;
-            margin-top: 0%;
+            margin-left: 25%;
+            margin-top: 15%;
+            font-size: 1.5em;
+            padding-bottom: 10%;
+        }
+        .til_body {
+            margin-top: 5%;
+            margin-left: 3%;
+            width: 90%;
+            padding-top: 10%;
+            padding-bottom: 5%;
+        }
+        .til_div {
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 90%;
+        }
+        .til_title {
+            margin-bottom: 5%;
+            margin-top: -10%;
+            font-size: 1em;
+        }
+        .til_date {
+            margin-left: 80%;
+            margin-top: 5%;
+            font-size: .8em;
+        }
+        .til_text {
+            margin-top: 5%;
             margin-bottom: 10%;
+            font-size: .8em;
+        }
+        .footer {
+            margin-top: 20%;
+            margin-left: 35%;
         }
     }
     
     @media (min-width: 426px) and (max-width: 768px) {
-    	body {
-    		margin-left: 10%;
-            overflow-x: hidden;
-    		
-    	}
-    	h1 {
-    		
-    		width: 60%;
-    		font-size: 2em;
-    		margin-right: 0;
-    		float: left;
-    	}
-    	button {            
-            margin-left: 65%;
-            margin-top: -10% !important;
+        h1 {
+            /*position: absolute; */
+            margin-left: 35%;
+            margin-top: 10%;
+            font-size: 1.5em;
+            padding-bottom: 5%;
+        }
+        .til_body {
+            margin-top: %;
+            margin-left: 15%;
+            width: 70%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .til_div {
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 90%;
+        }
+        .til_title {
             margin-bottom: 5%;
-            padding-right: 0;
-            padding-left: 0;
-            width: 15%;
-            height: 30%;
+            margin-top: -5%;
             font-size: 1em;
         }
-        .hr_1 {
-            width: 85%;
-            /*position: absolute; */
-            margin-left: 0%;
-            margin-top: 0%;
-            margin-bottom: 5%;
+        .til_date {
+            margin-left: 80%;
+            margin-top: 5%;
+            font-size: .8em;
         }
-        p {
-        	font-size: 1.3em;
+        .til_text {
+            margin-top: 5%;
+            margin-bottom: 10%;
+            font-size: .8em;
+        }
+        .footer {
+            margin-top: 10%;
+            margin-left: 40%;
         }
     }
     
     @media (min-width: 769px) and (max-width: 1024px) {
-        body {
-            margin-left: 10%;
-            overflow-x: hidden;
-            
-        }
         h1 {
-            
-            width: 60%;
-            font-size: 2.3em;
-            margin-right: 0;
-            float: left;
-        }
-        button {            
-            margin-left: 65%;
-            margin-top: -5% !important;
-            margin-bottom: 5%;
-            padding-right: 0;
-            padding-left: 0;
-            width: 15%;
-            height: 40%;
-            font-size: 1.6em;
-        }
-        .hr_1 {
-            width: 85%;
             /*position: absolute; */
-            margin-left: 0%;
-            margin-top: 0%;
+            margin-left: 35%;
+            margin-top: 10%;
+            font-size: 1.5em;
+            padding-bottom: 5%;
+        }
+        .til_body {
+            margin-top: %;
+            margin-left: 15%;
+            width: 70%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .til_div {
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 90%;
+        }
+        .til_title {
             margin-bottom: 5%;
+            margin-top: -5%;
+            font-size: 1em;
         }
-        p {
-            font-size: 1.7em;
+        .til_date {
+            margin-left: 80%;
+            margin-top: 5%;
+            font-size: .8em;
         }
-
+        .til_text {
+            margin-top: 5%;
+            margin-bottom: 10%;
+            font-size: .8em;
+        }
+        .footer {
+            margin-top: 10%;
+            margin-left: 40%;
+            font-size: 1.5em;
+        }
     }
     
     @media (min-width: 1025px) {
-        body {
-            margin-left: 10%;
-            overflow-x: hidden;
-            
-        }
         h1 {
-            
-            width: 60%;
-            font-size: 2.7em;
-            margin-right: 0;
-            float: left;
-        }
-        button {            
-            margin-left: 65%;
-            margin-top: -5% !important;
-            margin-bottom: 5%;
-            padding-right: 0;
-            padding-left: 0;
-            width: 11%;
-            height: 40%;
-            font-size: 1.7em;
-        }
-        .til-date {
-            position: relative;
-            font-size: 1.1em;
-            margin-left: 65%;
-            margin-top: -4%;
-        }
-
-        .til_text {
-            font-size: 1.4em;
-
-        }
-
-        .hr_1 {
-            width: 85%;
             /*position: absolute; */
-            margin-left: 0%;
-            margin-top: 0%;
+            margin-left: 42%;
+            margin-top: 5%;
+            font-size: 1.5em;
+            padding-bottom: 5%;
+        }
+        .til_body {
+            margin-top: %;
+            margin-left: 25%;
+            width: 50%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .til_div {
+            
+            margin-left: 5%;
+            width: 90%;
+        }
+        .til_title {
             margin-bottom: 5%;
+            margin-top: -5%;
+            font-size: 1em;
         }
-        p {
-            font-size: 1.7em;
+        .til_date {
+            margin-left: 80%;
+            
+            font-size: .8em;
         }
-
-        /* ---------- */
-
-
+        .til_text {
+            margin-top: 5%;
+            margin-bottom: 10%;
+            font-size: .8em;
+        }
+        .footer {
+            margin-top: 10%;
+            margin-left: 40%;
+            font-size: 1.5em;
+        }
     }
-
-
-
-
-
-
