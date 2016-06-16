@@ -4,19 +4,26 @@ starter pack
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" href="js/main.js"></script>
 <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0'>
-
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 Media Queries 
 
-@media (min-width: 1025px) {
+@media (min-width: 0px) and (max-width: 320px) {}
 
-@media (min-width: 769px) and (max-width: 1024px) { }
+@media (min-width: 321px) and (max-width: 425px) {}
 
-@media (min-width: 426px) and (max-width: 768px) { }
+@media (min-width: 426px) and (max-width: 768px) {}
 
-@media (min-width: 321px) and (max-width: 425px) { }
+@media (min-width: 769px) and (max-width: 1024px) {}
 
-@media (min-width: 0px) and (max-width: 320px) { }
+@media (min-width: 1025px) {}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+overflow-x: hidden;
 
 JQuery 
 
