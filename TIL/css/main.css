@@ -1,7 +1,7 @@
     body {
-        background-color: #f7f7f7;
+        background-color: #f7f7f7 !important;
         width: 100%;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     
     h1 {
@@ -10,6 +10,10 @@
     
     hr {
         border-color: #A7A7A9;
+    }
+    
+    .row {
+        background-color: #ffffff !important;
     }
     
     .til_div {
@@ -38,217 +42,184 @@
         font-family: 'Tangerine', cursive;
     }
     
-    @media (min-width: 0px) and (max-width: 320px) {
+    @media screen and (max-width: 39.9375em) {
         h1 {
-            /*position: absolute; */
-            margin-left: 20%;
-            margin-top: 15%;
-            font-size: 1.5em;
-            padding-bottom: 10%;
+            margin-left: 25% !important;
+            margin-top: 10% !important;
         }
-        .til_body {
-            margin-top: 5%;
-            margin-left: 5%;
-            width: 85%;
-            padding-top: 10%;
-            padding-bottom: 5%;
+        .row {
+            margin-left: 10% !important;
+            margin-top: 15% !important;
+            width: 80% !important;
         }
-        .til_div {
-            margin-top: 5%;
-            margin-left: 10%;
-            width: 90%;
+        p {
+            margin: 0 !important;
         }
-        .til_title {
-            margin-top: 1%;
-            margin-bottom: 5%;
-            margin-top: 1%;
-            font-size: 1em;
+        .medium-3 {
+            padding: 5% !important;
+            margin-top: 5% !important;
+            background-color: #4DD0E1;
         }
         .til_date {
-            margin-top: 5%;
-            margin-bottom: 4%;
-            font-size: .8em;
+            margin-left: 5% !important;
+            color: #ffffff;
+        }
+        .language {
+            margin-left: 20% !important;
+            color: #ffffff !important;
+        }
+        .til_title {
+            padding-top: 5% !important;
+            margin-bottom: 5% !important;
+            margin-left: 20% !important;
         }
         .til_text {
-            margin-top: 5%;
-            margin-bottom: 10%;
-            font-size: .8em;
+            margin: 2% !important;
+            text-align: justify;
         }
         .footer {
-            margin-left: 30%;
+            background-color: #f7f7f7 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            margin-left: 30% !important;
+            margin-top: 5% !important;
+            font-size: 1.3em;
         }
     }
+    /* Medium and up */
     
-    @media (min-width: 321px) and (max-width: 425px) {
+    @media screen and (min-width: 40em) {
         h1 {
-            /*position: absolute; */
-            margin-left: 25%;
-            margin-top: 15%;
-            font-size: 1.5em;
-            padding-bottom: 10%;
+            margin-left: 25% !important;
+            margin-top: 10% !important;
         }
-        .til_body {
-            margin-top: 5%;
-            margin-left: 3%;
-            width: 90%;
-            padding-top: 10%;
-            padding-bottom: 5%;
+        .row {
+            margin-left: 10% !important;
+            margin-top: 5% !important;
+            width: 80% !important;
         }
-        .til_div {
-            margin-top: 5%;
-            margin-left: 5%;
-            width: 90%;
+        p {
+            margin: 0 !important;
         }
-        .til_title {
-            margin-bottom: 5%;
-            margin-top: -10%;
-            font-size: 1em;
+        .medium-3 {
+            padding: 5% !important;
+            background-color: #4DD0E1;
         }
         .til_date {
-            margin-left: 80%;
-            margin-top: 5%;
-            font-size: .8em;
+            color: #ffffff;
+        }
+        .language {
+            margin-left: 10% !important;
+            color: #ffffff !important;
+        }
+        .til_title {
+            padding-top: 5% !important;
+            margin-bottom: 5% !important;
+            margin-left: 2% !important;
         }
         .til_text {
-            margin-top: 5%;
-            margin-bottom: 10%;
-            font-size: .8em;
-            width: 70%;
-            line-height: 20px;
+            margin: 2% !important;
+            text-align: justify;
         }
         .footer {
-            margin-top: 20%;
-            margin-left: 35%;
+            background-color: #f7f7f7 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            margin-left: 40% !important;
+            margin-top: 5% !important;
+            font-size: 1.5em;
+            margin-bottom: 0 !important;
         }
     }
+    /* Medium only */
     
-    @media (min-width: 426px) and (max-width: 768px) {
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         h1 {
-            /*position: absolute; */
-            margin-left: 35%;
-            margin-top: 10%;
-            font-size: 1.5em;
-            padding-bottom: 5%;
+            margin-left: 25% !important;
+            margin-top: 10% !important;
         }
-        .til_body {
-            margin-top: %;
-            margin-left: 15%;
-            width: 70%;
-            padding-top: 5%;
-            padding-bottom: 5%;
+        .row {
+            margin-left: 10% !important;
+            margin-top: 5% !important;
+            width: 80% !important;
         }
-        .til_div {
-            margin-top: 5%;
-            margin-left: 5%;
-            width: 90%;
+        p {
+            margin: 0 !important;
         }
-        .til_title {
-            margin-bottom: 5%;
-            margin-top: -5%;
-            font-size: 1.2em;
+        .medium-3 {
+            padding: 5% !important;
+            background-color: #4DD0E1;
         }
         .til_date {
-            margin-left: 80%;
-            margin-top: 5%;
-            font-size: .8em;
+            color: #ffffff;
+        }
+        .language {
+            margin-left: 20% !important;
+            color: #ffffff !important;
+        }
+        .til_title {
+            padding-top: 5% !important;
+            margin-bottom: 5% !important;
+            margin-left: 2% !important;
         }
         .til_text {
-            margin-top: 5%;
-            margin-bottom: 10%;
-            font-size: .9em;
-            width: 50%;
-            line-height: 20px;
+            margin: 2% !important;
+            text-align: justify;
         }
         .footer {
-            margin-top: 10%;
-            margin-left: 40%;
+            background-color: #f7f7f7 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            margin-left: 40% !important;
+            margin-top: 5% !important;
+            font-size: 1.5em;
+            margin-bottom: 0 !important;
         }
     }
+    /* Large and up */
     
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 64em) {
         h1 {
-            /*position: absolute; */
-            margin-left: 35%;
-            margin-top: 10%;
-            font-size: 1.5em;
-            padding-bottom: 5%;
+            margin-left: 35% !important;
+            margin-top: 3% !important;
         }
-        .til_body {
-            margin-top: %;
-            margin-left: 15%;
-            width: 70%;
-            padding-top: 5%;
-            padding-bottom: 5%;
+        .row {
+            margin-left: 15% !important;
+            margin-top: 3% !important;
+            width: 70% !important;
         }
-        .til_div {
-            margin-top: 5%;
-            margin-left: 5%;
-            width: 90%;
+        p {
+            margin: 0 !important;
         }
-        .til_title {
-            margin-bottom: 5%;
-            margin-top: -5%;
-            font-size: 1em;
+        .medium-3 {
+            padding: 5% !important;
+            background-color: #4DD0E1;
         }
         .til_date {
-            margin-left: 80%;
-            margin-top: 5%;
-            font-size: .8em;
+            color: #ffffff;
+        }
+        .language {
+            margin-left: 15% !important;
+            color: #ffffff !important;
+        }
+        .til_title {
+            padding-top: 2% !important;
+            margin-bottom: 2% !important;
+            margin-left: 2% !important;
         }
         .til_text {
-            margin-top: 5%;
-            margin-bottom: 10%;
-            font-size: .8em;
-            width: 50%;
-            line-height: 20px;
+            margin: 2% !important;
+            text-align: justify;
         }
         .footer {
-            margin-top: 10%;
-            margin-left: 40%;
-            font-size: 1.5em;
-        }
-    }
+            background-color: #f7f7f7 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            margin-left: 40% !important;
+            margin-top: 5% !important;
+            font-size: 1.7em;
+            margin-bottom: 0 !important;
+        }}
+    /* Large only */
     
-    @media (min-width: 1025px) {
-        h1 {
-            /*position: absolute; */
-            margin-left: 42%;
-            margin-top: 5%;
-            font-size: 1.5em;
-            padding-bottom: 5%;
-        }
-        .til_body {
-            margin-top: %;
-            margin-left: 25%;
-            width: 50%;
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
-        .til_div {
-            
-            margin-left: 5%;
-            width: 90%;
-        }
-        .til_title {
-            margin-bottom: 5%;
-            margin-top: -5%;
-            font-size: 1em;
-        }
-        .til_date {
-            margin-left: 80%;
-            
-            font-size: .8em;
-        }
-        .til_text {
-            margin-top: 5%;
-            margin-bottom: 10%;
-            font-size: .8em;
-            width: 50%;
-            line-height: 20px;
-        }
-        .footer {
-            margin-top: 10%;
-            margin-left: 40%;
-            font-size: 1.5em;
-        }
-    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {}

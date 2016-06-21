@@ -8,42 +8,63 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0'>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
 </head>
 
 <body>
     <h1>Today I Learned</h1>
-    <div class="til_body">
-        <div class="til_div" id="til_div">
-            <p class="til_date"> June, 13 </p>
-            <p class="til_title"> Function Declaration - JS</p>
-            <p class="til_text" id="til_text">
-                If "function" is the very first thing in the statement, then it's a function declaration. Otherwise, it's a function expression.
-            </p>
+    <div class="row">
+        <div class="medium-9 columns">
+            <div class="til_div" id="til_div">
+                <p class="til_title"> Function Declaration</p>
+                <p class="til_text" id="til_text">
+                    If "function" is the very first thing in the statement, then it's a function declaration. Otherwise, it's a function expression.
+                </p>
+            </div>
         </div>
-        <div class="til_div" id="til_div">
-            <p class="til_date"> June, 14 </p>
-            <p class="til_title"> Link Color Inherit</p>
-            <p class="til_text" id="til_text">
-                a { color: inherit; } <br />
-                will cause the element to take the color of its parent
-            </p>
+        <div class="medium-3 columns">
+            <span class="til_date"> June, 13 </span>
+            <span class="language"><i class="fa fa-code" aria-hidden="true"></i> &nbsp; javascript</span>
         </div>
-      <div class="til_div" id="til_div">
-            <p class="til_date"> June, 15 </p>
-            <p class="til_title"> Cross-Domain Scripting</p>
-            <p class="til_text" id="til_text">
-                jsonp instead of json can be used for cross-domain scripting because using json can sometimes result in no 'access-control-allow-origin' header error.
-            </p>
-        </div>
-      <!--    <div class="til_div" id="til_div">
-            <p class="til_date"> June, 9 </p>
-            <p class="til_title"> Title of TIL 1</p>
-            <p class="til_text" id="til_text">
-                This is what I learned today.
-            </p>
-        </div> -->
     </div>
+
+    <div class="row">
+        <div class="medium-9 columns">
+            <div class="til_div" id="til_div">
+                <p class="til_title"> Link Color Inherit</p>
+                <p class="til_text" id="til_text">
+                    a { color: inherit; }
+                <br /> will cause the element to take the color of its parent
+                </p>
+            </div>
+        </div>
+        <div class="medium-3 columns">
+            <span class="til_date"> June, 14 </span>
+            <span class="language"><i class="fa fa-code" aria-hidden="true"></i> &nbsp; CSS</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-9 columns">
+            <div class="til_div" id="til_div">
+                <p class="til_title"> Cross-Domain Scripting</p>
+                <p class="til_text" id="til_text">
+                    jsonp instead of json can be used for cross-domain scripting because using json can sometimes result in no 'access-control-allow-origin' header error.
+                </p>
+            </div>
+        </div>
+        <div class="medium-3 columns">
+            <span class="til_date"> June, 15 </span>
+            <span class="language"><i class="fa fa-code" aria-hidden="true"></i> &nbsp; CSS</span>
+        </div>
+    </div>
+   
+   
     <p class="footer">
         built by <a href="https://www.harshalgupta.me">Harshal Gupta</a>
     </p>
