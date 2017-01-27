@@ -37,9 +37,9 @@ hr {
 h1 {
     position: absolute;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 400%;
+    font-size: 300%;
     color: white;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 h1:after {

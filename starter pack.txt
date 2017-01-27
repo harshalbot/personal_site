@@ -5,6 +5,10 @@ starter pack
 <script type="text/javascript" href="js/main.js"></script>
 <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
 
 Media Queries 
 
@@ -23,6 +27,21 @@ textarea:focus, input:focus{
 }
 
 
+/*--------- FOUNDATION QUERIES ------------*/
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
 overflow-x: hidden;
 
 JQuery 
@@ -37,3 +56,6 @@ Bootstrap
 
 1) Change DO to your firm
 2) College address is Hannohver
+
+https://gun.io/r/e748fa12b46e9a7bb8494c464db2c3920d6558e4/
+http://finance.google.com/finance/info?client=ig&q=hdfc
